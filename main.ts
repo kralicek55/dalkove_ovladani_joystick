@@ -1,11 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendValue("muzes_jet", 0)
+    radio.sendValue("MuzesJet", 0)
+    basic.showIcon(IconNames.No)
 })
 input.onButtonPressed(Button.B, function () {
-    radio.sendValue("muzes_jet", 1)
+    radio.sendValue("MuzesJet", 1)
+    basic.showIcon(IconNames.Yes)
 })
 let Y = 0
 let X = 0
+radio.setGroup(90)
 basic.showLeds(`
     . . # # .
     . . # # #
@@ -13,7 +16,6 @@ basic.showLeds(`
     # # # # .
     . # . # .
     `)
-radio.setGroup(90)
 basic.forever(function () {
     X = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.X), 1023, 0, -20, 20)
     Y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 0, 1023, -50, 50)
