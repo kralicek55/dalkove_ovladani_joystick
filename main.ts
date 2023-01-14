@@ -1,3 +1,9 @@
+input.onButtonPressed(Button.A, function () {
+    radio.sendValue("muzes_jet", 0)
+})
+input.onButtonPressed(Button.B, function () {
+    radio.sendValue("muzes_jet", 1)
+})
 let Y = 0
 let X = 0
 basic.showLeds(`
