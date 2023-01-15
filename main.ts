@@ -1,8 +1,5 @@
 input.onButtonPressed(Button.A, function () {
     radio.sendValue("MuzesJet", 0)
-    basic.showIcon(IconNames.No)
-    basic.pause(500)
-    zobraz_logo()
 })
 function zobraz_logo () {
     basic.showLeds(`
@@ -13,12 +10,6 @@ function zobraz_logo () {
         . # . # .
         `)
 }
-input.onButtonPressed(Button.B, function () {
-    radio.sendValue("MuzesJet", 1)
-    basic.showIcon(IconNames.Yes)
-    basic.pause(500)
-    zobraz_logo()
-})
 let Y = 0
 let X = 0
 radio.setGroup(90)
