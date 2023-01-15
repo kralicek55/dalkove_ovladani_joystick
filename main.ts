@@ -11,7 +11,7 @@ function zobraz_logo () {
         `)
 }
 input.onButtonPressed(Button.B, function () {
-    radio.sendString("ZmenVystrazneSvetla")
+    radio.sendString("ZmenVystrazne")
 })
 let Y = 0
 let X = 0
