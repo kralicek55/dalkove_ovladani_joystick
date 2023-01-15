@@ -10,6 +10,9 @@ function zobraz_logo () {
         . # . # .
         `)
 }
+input.onButtonPressed(Button.B, function () {
+    radio.sendString("ZmenVystrazneSvetla")
+})
 let Y = 0
 let X = 0
 radio.setGroup(90)
