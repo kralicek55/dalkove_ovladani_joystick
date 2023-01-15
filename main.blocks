@@ -4,4 +4,4 @@
         # # # # . 
         # # # # . 
         . # . # .
-        `</field></block></statement></block><block type="device_button_event" id="afP9ge9Cp0TNWp!GJl2a" x="7" y="415"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="radio_datagram_send_value" id="oIm`K`gqua]/C8Qd}J`K"><value name="name"><shadow type="text" id="Hbh^}UwkHzTuGxi_ZVKx"><field name="TEXT">MuzesJet</field></shadow></value><value name="value"><shadow type="math_number" id="IK})qji1DyBYEJ5(2^w%"><field name="NUM">0</field></shadow></value></block></statement></block></xml>
+        `</field></block></statement></block><block type="device_button_event" id="afP9ge9Cp0TNWp!GJl2a" x="7" y="415"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="radio_datagram_send_string" id="-7{7P/i0@5Ecww3Zw5^E"><value name="msg"><shadow type="text" id="VDc^_Q?:U7oFP,vn/7S0"><field name="TEXT">ZmenMuzesJet</field></shadow></value></block></statement></block></xml>

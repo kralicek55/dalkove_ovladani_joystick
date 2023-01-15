@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendValue("MuzesJet", 0)
+    radio.sendString("ZmenMuzesJet")
 })
 function zobraz_logo () {
     basic.showLeds(`
