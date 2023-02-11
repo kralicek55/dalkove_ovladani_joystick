@@ -13,8 +13,12 @@ function zobraz_logo () {
 input.onButtonPressed(Button.B, function () {
     radio.sendString("ZmenVystrazne")
 })
+joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
+    radio.sendString("Zatrub")
+})
 let Y = 0
 let X = 0
+joystickbit.initJoystickBit()
 radio.setGroup(90)
 zobraz_logo()
 basic.forever(function () {
