@@ -26,4 +26,6 @@ basic.forever(function () {
     Y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 0, 1023, -50, 50)
     radio.sendValue("X", X)
     radio.sendValue("Y", Y)
+    kitronik_VIEW128x64.show("   X: " + Math.round(X) + "   ", 1, kitronik_VIEW128x64.ShowAlign.Centre, kitronik_VIEW128x64.FontSelection.Big)
+    kitronik_VIEW128x64.show("   Y: " + Math.round(Y) + "", 3, kitronik_VIEW128x64.ShowAlign.Centre, kitronik_VIEW128x64.FontSelection.Big)
 })

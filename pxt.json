@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1"
+        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1",
+        "pxt-kitronik-128x64display": "github:kitronikltd/pxt-kitronik-128x64display#v0.4.1"
     },
     "files": [
         "main.blocks",
@@ -16,11 +17,11 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "6.0.22",
         "targetId": "microbit"
     },
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
